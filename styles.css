@@ -1,94 +1,104 @@
 .contain {
     display: flex;
-    gap: 80px;
-  margin-top: 80px;
-  align-items: center;
-  margin-left: 100px;
-  background-color: rgba(160, 155, 155, 0.281);
-}
-.box {
-background-color: rgba(160, 155, 155, 0.281);
-    padding: 20px 20px 20px 20px;
-    border-radius: 10px;
-    justify-items: center;
-    border: none;
-    box-shadow: 5px 5px 10px rgb(0, 0, 0);
-}
-.login-logo {
-    width: 40px;
-    margin: 10px;
-    padding: 0;
-    cursor: pointer;
-}
-.inbox {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 30px;
-    font-size: 30px;
+    flex-direction: row;
+    gap: 140px;
     align-items: center;
+    margin-top: 90px;
+    margin-left: 100px;
 }
-.type {
-    padding: 10px 15px;
-    font-size: 20px;
+.Profile {
+width: 100%;
 }
-.type2 {
-     padding: 10px 15px;
-     font-size: 20px;
-}
-.box > p {
-    font-size: 30px;
-}
-.inbox2 {
+.detail {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 20px;
-}
-.inbox2 > div {
-font-size:20px;
-color: grey;
-}
-.sign {
-    padding: 10px 20px 10px 20px ;
-    font-size: 20px;
-    background-color: rgb(25, 185, 11);
-    border: none;
     border-radius: 10px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.75);
+    padding: 10px;
+    background-color: rgba(204, 203, 203, 0.541);
+}
+.first-tab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.less {
+    font-size: 20px;
+    font-family: arial;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.input > .info{
+    font-size: 20px;
+    font-family: arial;
+}
+.kal {
+    margin-right: 38px;
+}
+.second-tab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.input {
+    display: flex;
+    flex-direction: column;
+}
+.info {
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+    align-items: center;
+}
+.mini-pic {
+    width: 30px;
+    cursor: pointer;
+    margin: 10px;
+}
+.type {
+    font-size: 18px;
+    padding: 10px;
+}
+.click {
+    padding: 10px 15px 10px 15px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    background-color: rgb(6, 228, 6);
     color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
     cursor: pointer;
 }
-.sign:hover {
-background-color: white;
-color: rgb(25, 185, 11) ;
-border: 1px solid rgb(25, 185, 11);
-transition: 0.7s;
-box-shadow: 0 0 10px rgb(8, 241, 0);
+.click:hover {
+    background-color: white;
+    color: rgb(6, 228, 6);
+     box-shadow: 1px 1px 10px rgb(6, 228, 6);
+     transition: 0.5s;
 }
-.span {
+.text1 {
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-family: arial;
+    color: grey;
+}
+.cut {
     color: black;
-    font-weight: 500;
-}
-.contain > * {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 footer {
-    font-size: 20px;
-    font-weight: 500;
-    color: rgb(133, 131, 131);
-    width: 175px;
+     font-size: 20px;
+    font-family: arial;
+    width: 170px;
+    text-align: center;
+    color: grey;
 }
 @media (max-width: 1250px) {
     .contain {
         flex-direction: column;
-        height: 300%;
-        width: 100%;
-    }
-    .box {
-        height: 300%;
-        width: 50%;
-    }
-    .inbox {
-        flex-direction: column;
-        width: 100%;
+        gap: 60px;
+        margin-left: 0;
+        margin-top: 0;
     }
 }
